@@ -11,11 +11,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'Valloric/YouCompleteMe'
 Bundle "file-line"
 Plugin 'vim-airline/vim-airline'
 Plugin 'kristijanhusak/vim-hybrid-material'
-Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 " ADD YOUR PLUGIN
 call vundle#end()
 
@@ -57,18 +56,7 @@ set encoding=utf8
 "文件自动检测外部更改
 set autoread
 
-
-
- 
- 
-"youcompleteme
-let g:ycm_server_python_interpreter='/Users/robbin/anaconda3/bin/python'
-"let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
-let g:ycm_keep_logfiles = 1
-let g:ycm_log_level = 'debug'
-
-
-"ctrlp
+"fzf
 set rtp+=/usr/local/opt/fzf
 nmap  <C-r> :FZF<Enter>
 
@@ -79,4 +67,3 @@ let NERDTreeWinSize=20
 let NERDTreeWinPos="left"
 nmap <leader>o :NERDTreeToggle<CR>
 
-"airline
