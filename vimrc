@@ -15,6 +15,7 @@ Bundle "file-line"
 Plugin 'vim-airline/vim-airline'
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-surround'
 " ADD YOUR PLUGIN
 call vundle#end()
 
@@ -55,6 +56,7 @@ filetype plugin indent on
 set encoding=utf8
 "文件自动检测外部更改
 set autoread
+au CursorHold * checktime
 
 "fzf
 set rtp+=/usr/local/opt/fzf
@@ -67,3 +69,5 @@ let NERDTreeWinSize=20
 let NERDTreeWinPos="left"
 nmap <leader>o :NERDTreeToggle<CR>
 
+nmap <leader>s <C-W>s 
+nmap <leader>h :vs<CR>
