@@ -48,7 +48,6 @@ set undolevels=1000	" Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
 
 let mapleader=","
-set clipboard=unnamed
 set background=dark
 colorscheme hybrid_material
 syntax on
@@ -71,3 +70,6 @@ nmap <leader>o :NERDTreeToggle<CR>
 
 nmap <leader>s <C-W>s 
 nmap <leader>h :vs<CR>
+
+
+set clipboard=unnamed
