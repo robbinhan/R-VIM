@@ -113,3 +113,7 @@ nmap <leader>h :vs<CR>
 
 
 set clipboard=unnamed
+
+
+nmap <C-g> :vs term://git lg
+    
